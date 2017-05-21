@@ -1,0 +1,130 @@
+/*no css style in the html!!!!!! everything should be external style sheet>*/
+
+/* a selector can be, #id, .class, element*/
+/*patterns are ->    selector {property : value;}
+
+/* put a "." before a class can help the computer know you are looking for a class instead of an element* for example .title */
+* {
+    
+box-sizing: border-box;
+}
+
+footer,header,nav,main
+{
+    display:block;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color:salmon;
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    align-items:center;
+    width:80%;
+    height:100%;
+}
+main{
+    
+width:260px;
+text-align: center;
+}
+
+header h2 {
+    font-size: 20px;
+    margin-top:-20px;
+    text-align:right;
+    width:110%;
+    
+}
+.overview{
+    text-align: center;
+    font-size:12px;
+}
+
+.temp{
+    text-align: center;
+    flex-direction: column;
+}
+#highnlow{
+    margin:0;
+}
+
+#realtemp{
+    display:flex;
+    justify-content:space-around;
+    margin:10px;
+    padding:0;
+}
+
+.condition{
+    text-align:left;
+}
+
+.windspeed{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+#wind{
+    width:25%;
+}
+#speed{
+    width:50%
+}
+#direction{
+    width:50%;
+    margin-top:-15px;
+}
+.rain{
+    display:flex;
+}
+#precipitation{
+    margin:10px;
+}
+#muchrain{
+    width:30%;
+
+    margin:10px;
+    height:28px;
+}
+/*
+    
+.copyright{
+    display:flex;
+    
+}
+
+ul{
+        display:flex;
+        flex-direction: row;
+}
+
+li{
+        margin:10px;
+}
+
+
+
+
+
+
+
+
+/*
+
+h1 {font-size: 16px;}
+
+h2 {font-size: 1em;}
+*/
+/* em changes according to teh size of the window.*/
+
+
+
+
+/*another way to call the name of things that we wanna to change*/
+
+
+/*flex-grow: 1;  it means if there's any space, i will expend to all I can; if there's limited space, I would just expand 1 bit. */
