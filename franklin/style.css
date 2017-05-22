@@ -10,7 +10,7 @@ footer,header,nav,main,body
 Display:block makes the content be be displayed as blocks.
 */
 body{
-    margin:0;
+    margin:0 auto;
     padding:0;
     background-color:salmon;
     display:flex;
@@ -107,6 +107,7 @@ links{
 ul{
     display:flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 li{
