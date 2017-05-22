@@ -3,11 +3,13 @@
 box-sizing: border-box;
 }
 
-footer,header,nav,main
+footer,header,nav,main,body
 {
     display:block;
 }
-
+/*
+Display:block makes the content be be displayed as blocks.
+*/
 body{
     margin:0;
     padding:0;
@@ -19,10 +21,13 @@ body{
     width:100%;
     height:100%;
 }
+/*
+This style with the body part is for the whole page except for the header
+and the footer. It makes all the content boxes to be aligned to center fo the page.
+*/
 main{
-    
-width:260px;
-text-align: center;
+    width:260px;
+    text-align: center;
 }
 
 header h2 {
@@ -30,8 +35,12 @@ header h2 {
     margin-top:-20px;
     text-align:right;
     width:110%;
-    
 }
+/*
+Within the header-h2 style, it makes the "Local Weather"
+closer to the "Feeling Lucky", and align to the right.
+*/
+
 .overview{
     text-align: center;
     font-size:12px;
@@ -41,6 +50,7 @@ header h2 {
     text-align: center;
     flex-direction: column;
 }
+
 #highnlow{
     margin:0;
 }
@@ -55,25 +65,22 @@ header h2 {
 .condition{
     text-align:left;
 }
-/*
-.windspeed{
-    flex-wrap:wrap;
-    justify-content: flex-end;
-    align-items: baseline;
-}
-*/
+
 .wind{
     display:flex;
     justify-content:space-between;
     height:130px;
 }
+
 #wind_Precipitation{
     display:flex;
     text-align: right;
     flex-direction: column;
     justify-content:space-around;
 }
-
+/*
+In the #wind-Precipitation, it helps wind and precipitation to ba aligned to the right together, so the colon can be lined up.
+*/
 #wind_wind{
     margin-top:0;
 }
@@ -97,12 +104,16 @@ header h2 {
 links{
     text-align: center;
 }
+
 ul{
     display:flex;
     flex-direction: row;
 }
 
 li{
-        margin:10px;
+    margin:10px;
     list-style-type: none;
 }
+/*
+The list-style-type can makes the bullet points disoppear or to other styles..
+*/
