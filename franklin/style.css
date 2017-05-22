@@ -74,10 +74,6 @@ header h2 {
     justify-content:space-around;
 }
 
-#wind_condition{
-    text-align: left;
-}
-
 #wind_wind{
     margin-top:0px;
 }
@@ -85,6 +81,11 @@ header h2 {
 #wind_p{
     margin-top:0px;
 }
+
+#wind_condition{
+    text-align: left;
+}
+
 .copyright{
     margin-top: 40px;
     display:flex;
