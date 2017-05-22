@@ -55,34 +55,35 @@ header h2 {
 .condition{
     text-align:left;
 }
-
+/*
 .windspeed{
-    display:flex;
     flex-wrap:wrap;
     justify-content: flex-end;
     align-items: baseline;
 }
-#wind{
-    width:25%;
-}
-#speed{
-    width:50%
-}
-#direction{
-    width:50%;
-    margin-top:-15px;
-}
-.rain{
+*/
+.wind{
     display:flex;
+    justify-content:space-between;
+    height:130px;
 }
-#precipitation{
-    margin:10px;
+#wind_Precipitation{
+    display:flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content:space-around;
 }
-#muchrain{
-    width:50%;
-    margin:10px;
-    height:28px;
+
+#wind_condition{
     text-align: left;
+}
+
+#wind_wind{
+    margin-top:0px;
+}
+
+#wind_p{
+    margin-top:0px;
 }
 .copyright{
     margin-top: 40px;
