@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+footer,header,nav,main,body
+{
+    display:block;
+}
+body{
+    margin:auto;
+    padding:0;
+    background-color:salmon;
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    height:100%;
+    padding-top: 30px;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+align-items: center;
+}
+
+#description{
+    display: flex;
+    width:100%;
+    height:200px;
+    background-image: url(/wireFrame/download.jpeg);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dsecription h2{
+}
+
+main{
+    padding-top:30px;
+}
+.pictures{
+    height:300px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    
+}
+#rubic{
+    height:80px;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+li{
+    margin:10px;
+    list-style-type: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+#home{
+    text-align: center;
+}
