@@ -21,15 +21,22 @@ body{
     height:100%;
     font-family:Helvetica;
     font-size: 18px;
-     background-image: url(/franklin/sky3.jpg);
+    background-image: url(/franklin/sky3.jpg);
     background-size: cover;
 }
+/*
+The background-image can assign a picture to the box, and when we made the size to cover, the picture is not going to repaet and also cover the whole background.
+*/
+/*
+This style with the body part is for the whole page except for the header
+and the footer. It makes all the content boxes to be aligned to center fo the page.
+*/
+
 h1,h2{
     font-family: Sansita, "second choice", generic-family;
 }
 /*
-This style with the body part is for the whole page except for the header
-and the footer. It makes all the content boxes to be aligned to center fo the page.
+The font-family can assign the font style and also some other attributes.
 */
 p{
     font-family:Helvetica;
@@ -37,18 +44,19 @@ p{
 
 main{
     width:100%;
-    text-align: center;
-   
-    
+    text-align: center;    
 }
+
 .title{
     text-align: center;
 }
+
 header{
     width:100%;
     background-image: url(/franklin/sky2.jpg);
     background-size: cover;
 }
+
 header h2 {
     font-size: 20px;
     margin-top:-20px;
@@ -69,6 +77,7 @@ closer to the "Feeling Lucky", and align to the right.
     text-align: center;
     flex-direction: column;
 }
+
 .box{
     width:450px;
     background-color:rgba(230,230,230,.6);
@@ -118,6 +127,7 @@ closer to the "Feeling Lucky", and align to the right.
 /*
 In the #wind-Precipitation, it helps wind and precipitation to ba aligned to the right together, so the colon can be lined up.
 */
+
 #wind_wind{
     margin-top:0;
 }
@@ -143,9 +153,6 @@ In the #wind-Precipitation, it helps wind and precipitation to ba aligned to the
 links{
     text-align: center;
 }
-.home{
-    
-}
 
 ul{
     display: flex;
@@ -161,12 +168,11 @@ ul{
 
 li{
     margin:5px;
-    list-style-type: none;
-    
+    list-style-type: none;    
 }
 
 .home a:visited {
-    color:black;
+    color:purple;
 }
 
 .home a:hover{
@@ -177,13 +183,14 @@ li a:link{
     text-decoration: none;
     color: #47556F;
 }
+
 li a:visited {
     color: darkred;
 }
+
 li a:hover{
     color:red;
 }
-
 /*
-The list-style-type can makes the bullet points disoppear or to other styles..
+the li a: can change the style when we interact with the links.
 */
