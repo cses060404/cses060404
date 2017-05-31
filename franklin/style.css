@@ -24,6 +24,7 @@ body{
     background-image: url(/franklin/sky3.jpg);
     background-size: cover;
 }
+
 /*
 The background-image can assign a picture to the box, and when we made the size to cover, the picture is not going to repaet and also cover the whole background.
 */
