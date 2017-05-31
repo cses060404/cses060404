@@ -172,11 +172,11 @@ li{
 }
 
 .home a:visited {
-    color:purple;
+    color:fuchsia;
 }
 
 .home a:hover{
-   color:red; 
+   color:lawngreen; 
 }
 
 li a:link{
