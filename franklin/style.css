@@ -74,6 +74,7 @@ closer to the "Feeling Lucky", and align to the right.
 
 .overview{
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .hourlyForecast{
@@ -84,17 +85,32 @@ closer to the "Feeling Lucky", and align to the right.
 .temp{
     text-align: center;
     flex-direction: column;
-}
-
-
-.box{
-    width:90%;
     background-color:rgba(230,230,230,.6);
-    margin: .2em auto;
+    border: 2px solid;
+    border-color:rgba(160,221,249,.6);
+    border-radius: 20px;
+  
+}
+.overview h1{
+    background-color:rgba(230,230,230,.6);
     border: 2px solid;
     border-color:rgba(160,221,249,.6);
     border-radius: 20px;
 }
+
+.box{
+    width:90%;
+    margin: .2em auto;
+}
+.current{
+    display:block;
+    background-color:rgba(230,230,230,.6);
+    border: 2px solid; 
+    
+    border-color:rgba(160,221,249,.6);
+    border-radius: 20px;
+    order:0;
+    }
 
 #highnlow{
     margin:0;
@@ -237,14 +253,7 @@ the li a: can change the style when we interact with the links.
         border-radius: 20px;
         order:1;
     }
-    .current{
-        display:block;
-        background-color:rgba(230,230,230,.6);
-        border: 2px solid;
-        border-color:rgba(160,221,249,.6);
-        border-radius: 20px;
-        order:0;
-    }
+    
     .hourlyForecast{
         display:block;
         background-color:rgba(230,230,230,.6);
@@ -260,7 +269,14 @@ the li a: can change the style when we interact with the links.
         overflow: auto;
         text-align: center;
     }
-    
+    .overview h1{
+        border: none;
+        background: none;
+    }
+    .temp{
+        border:none;
+        background:none;
+    }
     footer ul {
         position: static;
     }
