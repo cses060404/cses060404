@@ -48,6 +48,9 @@ main{
     text-align: center;    
 }
 
+
+
+
 .title{
     text-align: center;
 }
@@ -71,16 +74,21 @@ closer to the "Feeling Lucky", and align to the right.
 
 .overview{
     text-align: center;
-    font-size:12px;
 }
+
+.hourlyForecast{
+    display: none;
+}
+
 
 .temp{
     text-align: center;
     flex-direction: column;
 }
 
+
 .box{
-    width:80%;
+    width:90%;
     background-color:rgba(230,230,230,.6);
     margin: .2em auto;
     border: 2px solid;
@@ -98,16 +106,6 @@ closer to the "Feeling Lucky", and align to the right.
     justify-content:center;
     margin:10px;
     padding:0;
-}
-
-.condition{
-    display: flex;
-    text-align:left;
-    justify-content: center;
-}
-.condition h1{
-    padding-right: 150px;
-    margin-top: 5px;
 }
 
 .wind{
@@ -144,6 +142,7 @@ In the #wind-Precipitation, it helps wind and precipitation to ba aligned to the
 }
 footer{
     width:100%;
+    background: white;
 }
 .copyright{
     margin-top: 40px;
@@ -160,7 +159,7 @@ links{
     text-align: center;
 }
 
-ul{
+header ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -200,8 +199,81 @@ li a:hover{
 /*
 the li a: can change the style when we interact with the links.
 */
-@media (min-width:450px){
+@media (min-width:550px){
+    .title{
+        padding-left: 10px;
+        text-align: left
+    }
+    header h2{
+        text-align: left;
+        padding-left:250px
+    }
+    header ul{
+        position: static;
+        justify-content: space-around;
+    }
+    body {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+    }
+    main{
+        align-items: stretch;
+    }
     .box{
-        width:450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .box > section{
+        flex: 1 0 33%;
+    }
+    .overview{
+        display:block;
+        background-color:rgba(230,230,230,.6);
+        border: 2px solid;
+        border-color:rgba(160,221,249,.6);
+        border-radius: 20px;
+        order:1;
+    }
+    .current{
+        display:block;
+        background-color:rgba(230,230,230,.6);
+        border: 2px solid;
+        border-color:rgba(160,221,249,.6);
+        border-radius: 20px;
+        order:0;
+    }
+    .hourlyForecast{
+        display:block;
+        background-color:rgba(230,230,230,.6);
+        border: 2px solid;
+        border-color:rgba(160,221,249,.6);
+        border-radius: 20px;
+        order:2;
+    }
+    .hourlyForecast ul{
+        list-style-type: none;
+        padding-left: 0;
+        max-height: 12em;
+        overflow: auto;
+        text-align: center;
+    }
+    
+    footer ul {
+        position: static;
+    }
+    .copyright{
+        padding-left: 10px;
+        justify-content: flex-start;
+    }
+}
+@media (min-width:550px){
+    .box{
+    width:90%;
+        background: none;
+        border:none;
+    margin: .2em auto;
     }
 }
