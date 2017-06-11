@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Mogra');
 @import url('https://fonts.googleapis.com/css?family=Signika');
+/*
+We imported two fonts from the goolge fonts.
+*/
 .heading-font p{
     font-family: 'Signika', sans-serif;
 }
 .body-font p{
     font-family: 'Mogra', cursive;
 }
-
+/*
+The code above assigns two different fonts to the content so that the client can take a look of what kind of font we are going to use.
+*/
 .greenville_redesign h2 {
     font-size: 2em;
     color: blueviolet;
@@ -20,6 +25,9 @@ h3 {
     font-size: 25px;
     color: darkorange;
 }
+/* 
+We make all h3 headers to be 25px big and the color to darkorange.
+*/
 .screen {
     font-size: 23px;
     color: darkorange;
@@ -52,6 +60,9 @@ h3 {
     justify-content: space-around;
     align-items: center;
 }
+/* 
+For the color family, we use CSS to give the client a example of the color theme we are going to use.
+*/
 .navBar{
     display: flex;
     background-color: #CC40FF;
@@ -64,3 +75,6 @@ li{
     list-style-type: none; 
     padding: 5px;
 }
+/*
+We use the list-style-color property to cancel the dot in front of the list.
+*/
