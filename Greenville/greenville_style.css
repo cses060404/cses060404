@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+* {
+    box-sizing: border-box;
+}
+
+footer,header,nav,main,body
+{
+    display:block;
+}
+/*
+Display:block makes the content be be displayed as blocks.
+*/
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height:100%;
+    font-family:Helvetica;
+    font-size: 18px;
+    background-image: url(/franklin/sky3.jpg);
+    background-size: cover;
+}
+
+/*
+The background-image can assign a picture to the box, and when we made the size to cover, the picture is not going to repaet and also cover the whole background.
+*/
+/*
+This style with the body part is for the whole page except for the header
+and the footer. It makes all the content boxes to be aligned to center fo the page.
+*/
+.navBar{
+    background: red;
+}
+h1,h2{
+    font-family: Sansita, "second choice", generic-family;
+}
+/*
+The font-family can assign the font style and also some other attributes.
+*/
+p{
+    font-family:Helvetica;
+}
+
+main{
+    width:100%;
+    text-align: center;    
+}
+
+
+
+
+.title{
+    text-align: center;
+}
+
+header{
+    width:100%;
+    background-image: url(/franklin/sky2.jpg);
+    background-size: cover;
+}
+
+header h2 {
+    font-size: 20px;
+    margin-top:-20px;
+    text-align:center;
+    padding-left: 300px;
+}
+/*
+Within the header-h2 style, it makes the "Local Weather"
+closer to the "Feeling Lucky", and align to the right.
+*/
+
+.overview{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.hourlyForecast{
+    display: none;
+}
+
+
+.temp{
+    text-align: center;
+    flex-direction: column;
+    background-color:rgba(230,230,230,.6);
+    border: 2px solid;
+    border-color:rgba(160,221,249,.6);
+    border-radius: 20px;
+  
+}
+.overview h2{
+    background-color:rgba(230,230,230,.6);
+    border: 2px solid;
+    border-color:rgba(160,221,249,.6);
+    border-radius: 20px;
+}
+
+.box{
+    width:90%;
+    margin: .2em auto;
+}
+.current{
+    display:block;
+    background-color:rgba(230,230,230,.6);
+    border: 2px solid; 
+    
+    border-color:rgba(160,221,249,.6);
+    border-radius: 20px;
+    order:0;
+    }
+
+#highnlow{
+    margin:0;
+    padding-left: 50px;
+}
+
+#realtemp{
+    display:flex;
+    justify-content:center;
+    margin:10px;
+    padding:0;
+}
+
+.wind{
+    display:flex;
+    justify-content:center;
+    height:130px;
+}
+
+#wind_Precipitation{
+    display:flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content:space-between;
+    padding-top:15px;
+    margin-bottom: -5px;
+    font-size: 15px;
+}
+/*
+In the #wind-Precipitation, it helps wind and precipitation to ba aligned to the right together, so the colon can be lined up.
+*/
+
+#wind_wind{
+    margin-top:0;
+}
+
+#wind_p{
+    margin-top:0;
+}
+
+#wind_condition{
+    text-align: left;
+    justify-content: space-around;
+    padding-left: 30px;
+}
+footer{
+    width:100%;
+    background: white;
+}
+.copyright{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.home{
+    margin-left: 10px;
+}
+
+links{
+    text-align: center;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width:100%;
+}
+
+li{
+    margin:5px;
+    list-style-type: none;    
+}
+
+.home a:visited {
+    color:fuchsia;
+}
+
+.home a:hover{
+   color:lawngreen; 
+}
+
+li a:link{
+    text-decoration: none;
+    color: #47556F;
+}
+
+li a:visited {
+    color: darkred;
+}
+
+li a:hover{
+    color:red;
+}
+/*
+the li a: can change the style when we interact with the links.
+*/
+@media (min-width:550px){
+    .title{
+        padding-left: 10px;
+        text-align: left
+    }
+    header h2{
+        text-align: left;
+        padding-left:250px
+    }
+    header ul{
+        position: static;
+        justify-content: space-around;
+    }
+    body {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+    }
+    main{
+        align-items: stretch;
+    }
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .box > section{
+        flex: 1 0 33%;
+    }
+    .overview{
+        display:block;
+        background-color:rgba(230,230,230,.6);
+        border: 2px solid;
+        border-color:rgba(160,221,249,.6);
+        border-radius: 20px;
+        order:1;
+    }
+    
+    .hourlyForecast{
+        display:block;
+        background-color:rgba(230,230,230,.6);
+        border: 2px solid;
+        border-color:rgba(160,221,249,.6);
+        border-radius: 20px;
+        order:2;
+    }
+    .hourlyForecast ul{
+        list-style-type: none;
+        padding-left: 0;
+        max-height: 12em;
+        overflow: auto;
+        text-align: center;
+    }
+    .overview h2{
+        border: none;
+        background: none;
+    }
+    .temp{
+        border:none;
+        background:none;
+    }
+    footer ul {
+        position: static;
+    }
+    .copyright{
+        padding-left: 10px;
+        justify-content: flex-start;
+    }
+}
+@media (min-width:550px){
+    .box{
+    width:90%;
+        background: none;
+        border:none;
+    margin: .2em auto;
+    }
+}
