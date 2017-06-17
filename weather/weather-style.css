@@ -49,7 +49,7 @@ We make all h3 headers to be 25px big and the color to darkorange.
     border-radius: 10px 10px 0 0;
 }
 .color-swatch__primary {
-    background-color: #CC40FF;
+    background-color: bisque;
 }
 .color-swatch__secondary {
     background-color: #554BFF;

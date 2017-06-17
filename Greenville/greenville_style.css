@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('https://fonts.googleapis.com/css?family=Mogra');
+@import url('https://fonts.googleapis.com/css?family=Signika');
 * {
     box-sizing: border-box;
 }
@@ -7,12 +8,20 @@ footer,header,nav,main,body
 {
     display:block;
 }
-h1,h2{
-    font-family: Sansita, "second choice", generic-family;
+a{
+    font-family: 'Mogra', cursive;
 }
 
+li{
+    font-family: 'Mogra', cursive;
+}
 p{
-    font-family:Helvetica;
+    font-family: 'Mogra', cursive;
+}
+
+h1,h2{
+    
+    font-family: 'Signika', sans-serif;
 }
 
 .title{
@@ -53,7 +62,7 @@ body{
     height: 100%;
     font-family:Helvetica;
     font-size: 18px;
-    background-image: url(/Greenville/pexels-photo-373430.jpeg);
+    background-image: url(/Greenville/pexels-photo-373430.jpg);
     background-size: cover;
 }
 
