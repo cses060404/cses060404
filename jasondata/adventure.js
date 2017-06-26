@@ -7,8 +7,7 @@ var instructions = [
         },
         "choiceText": "choose 1",
         "title": "The Adventure Begins",
-        "description": "This is where you setup your initial story",
-        "end": false
+        "description": "This is where you setup your initial story"
     },
     {
         "id": 2,
@@ -18,8 +17,7 @@ var instructions = [
         },
         "choiceText": "Go Left",
         "title": "The long hallway",
-        "description": "Describe the current setting",
-        "end": false
+        "description": "Describe the current setting"
     },
     {
         "id": 3,
@@ -30,13 +28,13 @@ var instructions = [
         "choiceText": "Go Right",
         "title": "The hungry beast",
         "description": "This is probably not going to end well.",
-        "end": true
+        "ending": "false"
     }
 ];
 
 //1. create the getItem, updateElement, and updateButton functions
 function getItem(instructions, id) {
-    for (var i = 0; i < instructions.length; i++)
+    for (var i = 0; i < 10; i++)
         {
           if ( instructions[i].id == id)
               //The i here would be 0 when the id is one,
@@ -69,20 +67,56 @@ function nextStep(id) {
     
     updateElement('title', instruction.title);
     updateElement('description', instruction.description);
-
     var choice1 = getItem(instructions, instruction.choices.first);
     var choice2 = getItem(instructions, instruction.choices.second);
-    // get the items for choice1 and 2 from the list
-    
-    if (instruction.end){
-        window.alert("This is the end of the game!");
-        document.getElementById("buttonOne").disabled = true;
-        document.getElementById("buttonTwo").disabled = true;
-    }
-    // The if statement would test if the game reach the end point.
     
     updateElement('choiceOne', choice1.choiceText);
     updateElement('choiceTwo', choice2.choiceText);
     updateButton('buttonOne', choice1.id);
-    updateButton('buttonTwo', choice2.id);   
+    updateButton('buttonTwo', choice2.id);
+    window.alert(id);
+    
 }
+
+//updates the screen to show the current description and choices
+//requires the id of the new set of instructions
+
+//first we need to get the new item from the list of instructions
+ //then we need to update the screen with the main description
+
+
+//then get the items for choice1 and 2 from the list
+
+//check to see if they are endpoints
+    
+    //if endpoints then end the game
+    
+    
+    //if not update those sections on the screen with the choiceText
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//2. then create and use a function to initialize the game to step 1
+
+//3. other needed functions
+//restart: resets the game back to the beginning.
+
+//happy ending: does whatever we want it to do when they end in a good place    
+
+//sad ending: does whatever we want it to do if they end at a bad place
