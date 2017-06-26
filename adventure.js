@@ -67,6 +67,7 @@ function reset(){
     document.getElementById("buttonOne").disabled = false;
     document.getElementById("buttonTwo").disabled = false;
 }
+// This reset function would reset the content after the story ends.
 
 function nextStep(id) {
     
