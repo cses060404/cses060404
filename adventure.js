@@ -62,6 +62,11 @@ function updateButton(buttonId,choiceId){
 }
 //updateButton: sets the onclick event for a button with the id of the item it chooses
 
+function reset(){
+    nextStep(1);
+    document.getElementById("buttonOne").disabled = false;
+    document.getElementById("buttonTwo").disabled = false;
+}
 
 function nextStep(id) {
     
