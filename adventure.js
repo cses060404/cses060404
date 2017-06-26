@@ -86,3 +86,6 @@ function nextStep(id) {
     updateButton('buttonOne', choice1.id);
     updateButton('buttonTwo', choice2.id);   
 }
+
+
+//I worked with Travis for this assignment:)
