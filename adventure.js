@@ -27,12 +27,11 @@ var instructions = [
         },
         "choiceText": "Go Right",
         "title": "The hungry beast",
-        "description": "This is probably not going to end well.",
-        "remind": "This is the end of the story!!!"
+        "description": "This is probably not going to end well."
     }
 ];
 
-
+//1. create the getItem, updateElement, and updateButton functions
 function getItem(instructions, id) {
     for (var i = 0; i < 10; i++)
         {
@@ -41,18 +40,25 @@ function getItem(instructions, id) {
               //    i here would be 1 when the id is two.
               return instructions[i];
         }
+     
     
 }
+//getItem: gets an item from a list by id
+//requires the list and id of the desired element
 
 function updateElement(elementID,instruction){
     document.getElementById(elementID).innerHTML = instruction;
 }
+//updateElement: updates the contents of an element on the screen
+//requires the id of the div to update, and the new contents.
 
 function updateButton(buttonId,choiceId){
 
     var button = document.getElementById(buttonId);
     button.setAttribute('onclick',"nextStep(" + choiceId + ")")
 }
+//updateButton: sets the onclick event for a button with the id of the item it chooses
+
 
 function nextStep(id) {
     
@@ -95,15 +101,13 @@ function nextStep(id) {
 
 
 
-//1. create the getItem, updateElement, and updateButton functions
 
-//getItem: gets an item from a list by id
-//requires the list and id of the desired element
 
-//updateElement: updates the contents of an element on the screen
-//requires the id of the div to update, and the new contents.
 
-//updateButton: sets the onclick event for a button with the id of the item it chooses
+
+
+
+
 
 //2. then create and use a function to initialize the game to step 1
 
