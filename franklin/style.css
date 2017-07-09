@@ -33,7 +33,7 @@ This style with the body part is for the whole page except for the header
 and the footer. It makes all the content boxes to be aligned to center fo the page.
 */
 .navBar{
-    background: red;
+    background-color:peachpuff;
 }
 h1,h2{
     font-family: Sansita, "second choice", generic-family;
