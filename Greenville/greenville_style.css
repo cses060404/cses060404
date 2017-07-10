@@ -8,21 +8,23 @@ footer,header,nav,main,body
 {
     display:block;
 }
+
 a{
     font-family: 'Mogra', cursive;
 }
-
 li{
     font-family: 'Mogra', cursive;
 }
 p{
     font-family: 'Mogra', cursive;
 }
+/*for the font, I chose mogra to represent the content */
 
 h1,h2{
     
     font-family: 'Signika', sans-serif;
 }
+/*for the font, I chose Signika to represent the headers */
 
 .title{
     display: flex;
@@ -65,13 +67,22 @@ body{
     background-image: url(/Greenville/pexels-photo-373430.jpg);
     background-size: cover;
 }
-
+/*
+The background-image can assign a picture to the box, and when we made the size to cover, the picture is not going to repaet and also cover the whole background.
+*/
+/*
+This style with the body part is for the whole page except for the header
+and the footer. It makes all the content boxes to be aligned to center fo the page.
+*/
 main{
     width:100%;
     height: 600px;
     text-align: center;    
 }
 
+/*
+The box is where I put the three main contents and be able to use flex box to align them.
+*/
 .box{
     display: flex;
     flex-direction: column;
@@ -112,6 +123,9 @@ main{
     display: none;
 }
 
+/*
+For the Background color property, we can use the rgba method, or just assign a color to it. 
+*/
 .current{
     display: flex;
     display:block;
@@ -156,6 +170,9 @@ main{
     padding-left: 30px;
 }
 
+/*
+The footer here we make it fixed, so it would always stay at the bottom of the page.
+*/
 footer{
     width:100%;
     height:60px;
@@ -191,6 +208,9 @@ header ul{
     width:100%;
 }
 
+/*
+When we make the list style to none, the dot in fromt of the content would not show up.
+*/
 li{
     margin:5px;
     list-style-type: none;    
@@ -216,6 +236,15 @@ li a:visited {
 li a:hover{
     color:red;
 }
+/*
+the li a: can change the style when we interact with the links.
+*/
+
+
+
+/*
+The media property makes us able to apply the smaller version of the wirefram when the system detected that the screen is smaller than the assigned size.
+*/
 
 @media (min-width:550px){
     
@@ -227,6 +256,7 @@ li a:hover{
         border-radius: 20px;
         order:2;
     }
+    
      header ul{
         justify-content: space-around;
     }
@@ -257,6 +287,7 @@ li a:hover{
         overflow: auto;
         text-align: center;
     }
+    
     #currentT{
         height:30px;
          align-self: center;
@@ -267,6 +298,7 @@ li a:hover{
         width:48%;
         margin-top:0;
     }
+    
     .hourlyForecast{
         width:48%;
         height:60%;
