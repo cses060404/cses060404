@@ -1,63 +1,99 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         <meta charset="utf-8">
+        <title>Local Weather Report - Rexburg, ID | CIT 230 | Fronted Development</title>
+          <meta name="description" content="This website is a weather report website that especially reports on Franklin, ID.">
+          <meta name="viewport" content="width=device-width">
+          <link rel="stylesheet" type="text/css" href="/franklin/style.css" >
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Weather Home</title>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="/franklin/style-homepage.css" type="text/css" media="screen">
-</head>
-<!-- *********************************************
-* Who Did You Collaborate With On This Assessment?
-* 1. Wen Yao Chang
-* 2. Travis
-* 3.
-* 4.
-* 5.
-* ******************************************** -->
-<body>
-  <div id="wrapper">
-    <header id="page-header">
-      <h1>Weather Center</h1>
-      <h2 class="tagline">Know your weather</h2>
-    </header>
-    <nav id="page-nav">
-      <ul class="flexlist">
-        <li><a href="/franklin/index.html" title="Weather Center Current Location">Current</a></li>
-        <li><a href="/franklin/franklin-weather-small.html" title="Weather in Franklin, ID">Franklin</a></li>
-        <li><a href="/Greenville/greenville.html" title="Weather in Greenville, SC">Greenville</a></li>
-        <li><a href="/jsonweather-html/views/springfield.html" title="Weather in Springfield, IL">Springfield</a></li>
-      </ul>
-    </nav>
-    <main id="page-main">
-      <section class="weather-container">
-        <div id="cover">
-          <div id="status">Loading...</div>
+    <body>
+        <header>
+            <div class="title">
+                <h1><img src="/franklin/images.jpeg" alt ="sunny" height="50" width="50"> &#9856; &#9861; Feeling Lucky?</h1>    
+            </div>
+            
+          <h2 id="local">Local Weather</h2>
+            <nav >
+                <ul class = "navBar">
+                    <li><a href="/franklin/index.html">Home</a></li>
+                    <li><a href="/franklin/franklin-weather-small.html">Franklin</a></li>
+                    <li><a href="/Greenville/greenville.html">Greenville</a></li>
+                    <li><a href="">Springfield</a></li>
+                    <li><a href="">Search</a></li>
+                </ul>
+            </nav> 
+        </header>
+        
+        <main>
+<div class = "box">
+            
+        <section class = "overview">
+            <div id="cover">
+                <div id="status"></div>
+            </div>
+            
+            <h2 id="fr">Loading...</h2>
+            <div class ="temp">
+            <h3 id="currentT"></h3>
+            <div id= "realtemp">    
+               
+            <p id="highnlow"></p>
+            </div>
+            </div>
+        </section>
+    
+    
+    
+    
+        <section class = hourlyForecast>
+            <h2>Hourly Forecast</h2>
+                <ul>
+                    <li>7:00am : 67</li>
+                    <li>8:00am : 67</li>
+                    <li>9:00am : 67</li>
+                    <li>10:00am : 67</li>
+                    <li>11:00am : 67</li>
+                    <li>12:00am : 67</li>
+                    <li>1:00pm : 67</li>
+                    <li>2:00pm : 67</li>
+                    <li>3:00pm : 67</li>
+                    <li>4:00pm : 67</li>
+                    <li>5:00pm : 67</li>
+                    <li>6:00pm : 67</li>
+                </ul>
+        </section>
+    
+        <section class = "current">
+        <h2>Currrent Conditions</h2>
+            
+        <div class="wind">
+            <div id = wind_Precipitation>
+            <h2 id="wind_wind">Wind:</h2>
+            <h2 id="wind_p">Precipitation:</h2>
+            </div>
+            
+            <div id = "wind_condition">
+            <p id="speed"></p>            
+            <p id="direction"></p>
+            <p id="muchrain"></p>
+            </div>
         </div>
-        <h1 id="cityDisplay"></h1>
-        <h2>Current Conditions</h2>
-        <ul id="current_conditions">
-          <li id="currentTemp"></li>
-          <li id="summary"></li>
-          <li id="add1"></li>
-          <li id="add2"></li>
-          <li id="add3"></li>
-        </ul>
-      </section>
-    </main>
-    <footer id="page-footer">
-      <div id="footer-content">
-        <ul class="flexlist">
-          <li>Weather Center 2010 - <?php echo date('Y');  ?></li>
-          
-        </ul>
-      </div>
-      <small>Last updated: </small>
-    </footer>
-
-    <script src="/franklin/remote_wu.js"></script>
-  </div>
-</body>
-
+        </section>
+        </div>
+    <script src="/franklin/index.js"></script>
+        </main>
+        <footer>
+            <div class="copyright">
+                <p>&copy; 2017 Wen Yao Chang Franklin Layout</p>
+            <nav class="home">
+                <a href="/index.html"><p>Home</p></a>
+            </nav>
+            </div>
+            <div class="links">
+             
+            </div>
+        </footer>
+    </body>
 </html>
