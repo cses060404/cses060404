@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+* {
+    box-sizing: border-box;
+}
+
+footer,header,nav,main,body
+{
+    display:block;
+}
+
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    height:100%;
+    font-family:Helvetica;
+    font-size: 18px;
+    background-image: url(/final-project/making-step2color.gif);
+   
+}
+
+header h1{
+    text-align: center;
+    color:saddlebrown;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 0;
+    width:100%;
+}
+
+.title{
+    padding-left: 0px;
+    text-align: center;
+}
+
+.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: skyblue;
+        display: flex;
+        flex-direction: column;
+}
+
+.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+}
+
+
+.topnav li a:hover:not(.active) {background-color: darkgray;}
+
+
+li{
+  
+    list-style-type: none;    
+}
+
+/************* link ************************/
+li a:link{
+    text-decoration: none;
+    color: #47556F;
+}
+
+li a:visited {
+    color: darkred;
+}
+
+li a:hover{
+    color:black;
+}
+/*************************************/
+
+h1,h2{
+    font-family: Sansita, "second choice", generic-family;
+}
+
+#welcome1{
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.box{
+    display: flex;
+    padding-top: 30px;
+}
+
+.box2{
+    display: flex;
+    padding-top: 20px;
+}
+
+.img{
+padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#welcome1{
+    color:darkblue;  
+    font-size: 1.2em;
+}
+#welcome2{
+    color:darkslategrey;
+}
+
+main{
+    width:100%;
+    text-align: center;    
+}
+
+header{
+    width:100%;
+}
+.greeting, {
+    text-align: left;
+}
+.script{
+    display: flex;
+    align-items: center;
+}
+
+/*
+the li a: can change the style when we interact with the links.
+*/
+@media (min-width:720px){
+
+    ul.topnav{
+        flex-direction: row;
+    }
+    .right {
+        justify-content: flex-end;
+    }
+       
+    #welcome{
+    text-align: inherit;
+    }
+    .title{
+        text-align: left
+    }
+    
+    header ul{
+        position: static;
+        justify-content: space-around;
+    }
+    body {
+        width: 80%;
+        margin: auto;
+    }
+    main{
+        align-items: stretch;
+    }
+}
