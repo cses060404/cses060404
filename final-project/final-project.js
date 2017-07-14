@@ -1,26 +1,7 @@
 // Current Location Scripts
 (function () {
 
-    var status = document.getElementById('status');
-
-    (function getGeoLocation() {
-    
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(function (position) {
-                var lat = position.coords.latitude;
-                var long = position.coords.longitude;
-
-                // Call the getData function, send the lat and long
-                getData(lat, long);
-
-            });
-        } else {
-            status.text("Your browser doesn't support Geolocation or it is not enabled!");
-        }
-
-    }());
-
-    function getJSON(url) {
+    function getJSON() {
         return fetch(url)
             .then(function (response) {
                 return response.json();
@@ -31,9 +12,9 @@
     }
 
     // Get the data from the wunderground API
-    function getData(lat, long) {
-        var url = "http://api.wunderground.com/api/3e84b1ddb35bcd69/geolookup/conditions/q/"; //change this to the correct URL for wunderground
-        url = url +  lat + ',' + long + ".json";        getJSON(url).then(function (data) {
+    function getData() {
+        var url = "../final-project/schedule.json"; //change this to the correct URL for wunderground
+          getJSON(url).then(function (data) {
             console.log(data);
             //add the code necessary here to update the page with all of the correct data points.
             var curLocation = data.location;
