@@ -21,7 +21,7 @@ console.log("data");
             //add the code necessary here to update the page with all of the correct data points.
             var data = data;
             console.log(data);
-            var game1 = data.game1;
+            var game1 = data[game1];
             
             
           //  document.getElementById("round").innerHTML = curLocation.city;
