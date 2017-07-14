@@ -5,7 +5,7 @@
 		"date": "Thursday, October 12, 2017",
 		"location": "Hart Court D",
         "time":"3:00 PM",
-        "description": "please report 10 mins before the game!",
+        "description": "please report 10 mins before the game!"
 		},
     
     "game2":{
@@ -16,7 +16,7 @@
         "description": ""
         },
      
-    "game2":{
+    "game3":{
         "round": "quarterFinal",
 		"date": "Saturday, October 14, 2017",
 		"location": "Hart Court A",
@@ -24,7 +24,7 @@
         "description": "We would have lunch at the stage @ 12:00 PM"
 	   },
     
-	"game3":{
+	"game4":{
         "round": "SemiFinal",
 		"date": "Monday, October 16, 2017",
 		"location": "Hart Court B",
@@ -32,7 +32,7 @@
         "description": "We would have lunch at the stage @ 12:00 PM"
         },
     
-	 "game4":{
+	 "game5":{
         "round": "Final",
 		"date": "Monday, October 16, 2017",
 		"location": "BYU-I center",

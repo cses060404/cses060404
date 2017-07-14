@@ -80,22 +80,25 @@ function nextStep(id) {
         getJSON(url).then(function (data) {
             console.log(data);
             //add the code necessary here to update the page with all of the correct data points.
-            var curLocation = data.location;
+            var game1 = data.[1];
+            var game2 = data.[2];
+            var game3 = data.[3];
+            var game4 = data.[4];
+            var game5 = data.[5];
+            console.log(game5);
+            
             var condition = data.current_observation
             //this line will cause the Loading message to fade away.
-            document.getElementById("cover").classList.add('fadeout');
             
-            document.getElementById("cityDisplay").innerHTML = curLocation.city + ", " + curLocation.state;
+            document.getElementById("round").innerHTML = curLocation.city;
             
-            document.getElementById("currentTemp").innerHTML = Math.round(condition.temp_f) + "&#8457";
+            document.getElementById("date").innerHTML = ;
             
-            document.getElementById("summary").innerHTML = condition.weather;
+            document.getElementById("location").innerHTML = condition.weather;
             
-            document.getElementById("add3").innerHTML = condition.observation_time;
+            document.getElementById("time").innerHTML = condition.observation_time;
             
-            document.getElementById("add1").innerHTML = " Relative Humidity : " + condition.relative_humidity;
-  
-            document.getElementById("add2").innerHTML = "Wind: " + condition.wind_string;
+            document.getElementById("description").innerHTML = condition.relative_humidity;
 
             
         });
