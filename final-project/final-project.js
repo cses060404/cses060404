@@ -59,7 +59,7 @@ function nextStep(id) {
 */
  
 
-
+console.log("haha");
 // Current Location Scripts
 (function () {
     
@@ -77,7 +77,7 @@ function nextStep(id) {
     function getData() {
     
         getJSON("/final-project/schedule.json").then(function (data) {
-            console.log(data);
+            console.log(data.game1);
             console.log("haha");
             //add the code necessary here to update the page with all of the correct data points.
 
