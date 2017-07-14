@@ -1,7 +1,7 @@
 
-document.getElementById("date").innerHTML = "hahaha";
+
 console.log("data");
-// Current Location Scriptsdsfdsfsdfsd
+// Current Location
 (function () {
     
     function getJSON(url) {
@@ -22,11 +22,11 @@ console.log("data");
             var data = data;
             console.log(data);
             var game1 = data[game1];
-            
+            document.getElementById("date").innerHTML = game1.time;
             
           //  document.getElementById("round").innerHTML = curLocation.city;
             
-           // document.getElementById("date").innerHTML = game1.time;
+            
        /*     
             document.getElementById("location").innerHTML = condition.weather;
             
