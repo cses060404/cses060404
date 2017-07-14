@@ -61,7 +61,7 @@ function nextStep(id) {
 
 
 // Current Location Scripts
-(function () {
+//(function () {
     
     function getJSON(url) {
         return fetch(url)
@@ -107,6 +107,6 @@ function nextStep(id) {
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         });
     }*/
-}());
+//}());
 //dont know why
 
