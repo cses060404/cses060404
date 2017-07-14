@@ -45,7 +45,7 @@ console.log("data");
 function ajaxFromLocalJson(){
 	getJSON("../final-project/schedule.json").then(function (data){
 		console.log(data);
-		var result = data.results;
+		//var result = data.results;
 		
 
 		/*	
