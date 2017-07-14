@@ -1,5 +1,5 @@
 
-
+document.getElementById("date").innerHTML = "hahaha";
 console.log("data");
 // Current Location Scriptsdsfdsfsdfsd
 (function () {
@@ -26,7 +26,7 @@ console.log("data");
             
           //  document.getElementById("round").innerHTML = curLocation.city;
             
-            document.getElementById("date").innerHTML = game1.time;
+           // document.getElementById("date").innerHTML = game1.time;
        /*     
             document.getElementById("location").innerHTML = condition.weather;
             
