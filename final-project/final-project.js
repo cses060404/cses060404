@@ -1,5 +1,5 @@
 
-
+/*
 console.log("data");
 // Current Location
 (function () {
@@ -23,27 +23,52 @@ console.log("data");
             console.log(data);
             var game1 = data[game1];
             document.getElementById("date").innerHTML = game1.time;
-            
-          //  document.getElementById("round").innerHTML = curLocation.city;
-            
-            
-       /*     
-            document.getElementById("location").innerHTML = condition.weather;
-            
-            document.getElementById("time").innerHTML = condition.observation_time;
-            
-            document.getElementById("description").innerHTML = condition.relative_humidity;
-
-           */
-        });
-    }
-/*
-    // A function for changing a string to TitleCase
-    function toTitleCase(str) {
-        return str.replace(/\w+/g, function (txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        });
-    }*/
+        })}
 }());
 //still dont know why
 
+/*
+
+*/
+
+ function getJSON(url) {
+        return fetch(url)
+            .then(function (response) {
+                return response.json();
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+
+
+function ajaxFromLocalJson(){
+	getJSON("../final-project/schedule.json").then(function (data){
+		console.log(data);
+		var result = data.results;
+		
+
+		/*	
+			home_button.addEventListener('click',function(event){
+				event.preventDefault();
+				buildHome(data.Home);
+			
+			});
+	  
+			registration.addEventListener('click',function(event){
+				event.preventDefault();
+				buildRegistration(data.Registration);
+	  
+	  });
+	  
+			rules.addEventListener('click',function(event){
+				event.preventDefault();
+				buildRules(data.Rules);
+	  
+	  });
+	
+});
+*/
+});
+}
+ajaxFromLocalJson();
