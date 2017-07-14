@@ -1,7 +1,7 @@
 
 
 console.log("data");
-// Current Location Scripts
+// Current Location Scriptsdsfdsfsdfsd
 (function () {
     
     function getJSON(url) {
