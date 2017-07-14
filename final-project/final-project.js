@@ -75,9 +75,8 @@ function nextStep(id) {
 
     // Get the data from the wunderground API
     function getData() {
-        var url = "../final-project/schedule.json"; //change this to the correct URL for wunderground
     
-        getJSON(url).then(function (data) {
+        getJSON("/final-project/schedule.json").then(function (data) {
             console.log(data);
             //add the code necessary here to update the page with all of the correct data points.
             var game1 = data.[1];
@@ -87,11 +86,10 @@ function nextStep(id) {
             var game5 = data.[5];
             console.log(game5);
             
-            var condition = data.current_observation
-            //this line will cause the Loading message to fade away.
+            
             
             document.getElementById("round").innerHTML = curLocation.city;
-            
+       /*     
             document.getElementById("date").innerHTML = ;
             
             document.getElementById("location").innerHTML = condition.weather;
@@ -100,17 +98,15 @@ function nextStep(id) {
             
             document.getElementById("description").innerHTML = condition.relative_humidity;
 
-            
+           */
         });
-
-
     }
-
+/*
     // A function for changing a string to TitleCase
     function toTitleCase(str) {
         return str.replace(/\w+/g, function (txt) {
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         });
-    }
+    }*/
 }());
 
