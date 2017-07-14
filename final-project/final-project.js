@@ -84,9 +84,9 @@ function nextStep(id) {
             
             
           //  document.getElementById("round").innerHTML = curLocation.city;
-       /*     
-            document.getElementById("date").innerHTML = ;
             
+            document.getElementById("date").innerHTML = data.game1.time;
+       /*     
             document.getElementById("location").innerHTML = condition.weather;
             
             document.getElementById("time").innerHTML = condition.observation_time;
