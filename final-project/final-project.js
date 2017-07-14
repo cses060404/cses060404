@@ -76,18 +76,14 @@ function nextStep(id) {
     // Get the data from the wunderground API
     function getData() {
     
-        getJSON("/final-project/schedule.json").then(function (data) {
+        getJSON("schedule.json").then(function (data) {
             //add the code necessary here to update the page with all of the correct data points.
-            var game1 = data.game1;
-            var game2 = data.game2;
-            var game3 = data.game3;
-            var game4 = data.game4;
-            var game5 = data.game5;
-            console.log(game5);
+            var game1 = data;
+            console.log(data);
             
             
             
-            document.getElementById("round").innerHTML = curLocation.city;
+          //  document.getElementById("round").innerHTML = curLocation.city;
        /*     
             document.getElementById("date").innerHTML = ;
             
