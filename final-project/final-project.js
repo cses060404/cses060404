@@ -1,18 +1,4 @@
-
 /*
-console.log("data");
-// Current Location
-(function () {
-    
-    function getJSON(url) {
-        return fetch(url)
-            .then(function (response) {
-                return response.json();
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
 
     // Get the data from the wunderground API
     function getData() {
@@ -45,10 +31,39 @@ console.log("data");
 function ajaxFromLocalJson(){
 	getJSON("../final-project/schedule.json").then(function (data){
 		console.log(data);
-		//var result = data.results;
+        
+		var game1 = data[0];
 		
-
-		/*	
+            document.getElementById("date").innerHTML = game1.time;
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /*	
 			home_button.addEventListener('click',function(event){
 				event.preventDefault();
 				buildHome(data.Home);
