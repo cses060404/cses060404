@@ -138,6 +138,30 @@ padding-right: 10px;
     text-align: left;
 }
 
+.prize{
+    width:100%; 
+    display: flex;
+    color: darkviolet;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.prize p{
+    width:80%;
+}
+
+.prize img{
+    padding-bottom: 10px;
+}
+.box3{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.box3 h3{
+        color:darkblue;
+}
 
 main{
     width:100%;
@@ -206,7 +230,13 @@ the li a: can change the style when we interact with the links.
     align-items: center;
     }
 }
-
+.schedule{
+    display: flex;
+    flex-direction: column; 
+}
+table, th, td {
+    border: 1px solid black;
+}
 
 @media (max-width:1000px){
     .googleMap{
@@ -219,9 +249,15 @@ the li a: can change the style when we interact with the links.
         width: 480px;
         height: 360px
     }
+    .box3 p{
+        width:70%;
+    }
 }
 @media (max-width:600px){
     .box{
+        padding-top: 0px;
+    }
+    .box3{
         padding-top: 0px;
     }
     
@@ -232,5 +268,13 @@ the li a: can change the style when we interact with the links.
     .map img{
         width: 480px;
         height: 360px;
+    }
+
+    .box3 p{
+        width:60%;
+    }
+    
+    .title h1{
+        font-size: 30px;
     }
 }

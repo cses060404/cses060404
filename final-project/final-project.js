@@ -17,12 +17,15 @@
           getJSON(url).then(function (data) {
             console.log(data);
             //add the code necessary here to update the page with all of the correct data points.
-            var curLocation = data.location;
-            var condition = data.current_observation
+              
+              
+            var one = data.one;
+            var two = data.two;
+            var quarterFinal = data.quarterFinal;
+            var semifinal = data.semifinal;
+            var final = data.final;
             //this line will cause the Loading message to fade away.
         
-
-            document.getElementById("fr").innerHTML = curLocation.city + ", " + curLocation.state;
             
             document.getElementById("currentT").innerHTML = Math.round(condition.temp_f) + "&#8457";
             
@@ -40,10 +43,4 @@
 
     }
 
-    // A function for changing a string to TitleCase
-    function toTitleCase(str) {
-        return str.replace(/\w+/g, function (txt) {
-            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-        });
-    }
-}());
+ 
