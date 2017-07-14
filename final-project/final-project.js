@@ -32,10 +32,11 @@ function ajaxFromLocalJson(){
 	getJSON("../final-project/schedule.json").then(function (data){
 		console.log(data);
         
-		var game1 = data[0];
+        
 		
-            document.getElementById("date").innerHTML = game1.time;
-		
+		document.getElementById("location").innerHTML = data["game1"].time;
+            document.getElementById("date").innerHTML = data[0].time;
+		document.getElementById("description").innerHTML = data.["game1"].time;
         
         
         
@@ -56,13 +57,7 @@ function ajaxFromLocalJson(){
         
         
         
-        
-        
-        
-        
-        
-        
-        
+    
         /*	
 			home_button.addEventListener('click',function(event){
 				event.preventDefault();
