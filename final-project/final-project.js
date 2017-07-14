@@ -78,7 +78,7 @@ function nextStep(id) {
     
         getJSON("schedule.json").then(function (data) {
             //add the code necessary here to update the page with all of the correct data points.
-            var game1 = data;
+            var data = data;
             console.log(data);
             
             
