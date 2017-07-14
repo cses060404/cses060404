@@ -1,6 +1,6 @@
 
 
-
+console.log("data");
 // Current Location Scripts
 (function () {
     
