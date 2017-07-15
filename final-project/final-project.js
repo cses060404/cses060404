@@ -15,7 +15,6 @@ function ajaxFromLocalJson(x){
         /* We use console.log to check if we have the right element*/
 		console.log(data);
         
-        
 		/* Here we would put the right info in the right id property*/
 		document.getElementById("round").innerHTML = data["game" + x].round;
 		document.getElementById("date").innerHTML = data["game" + x].date;
