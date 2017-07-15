@@ -285,8 +285,13 @@ table, th, td {
     }
    
         .title a{
-        padding: 7px 8px;
+        padding: 7px 2px;
     }
        
+}
+
+@media (min-width:600px){
+.title a{
+        padding: 14px 16px;
     }
 }
