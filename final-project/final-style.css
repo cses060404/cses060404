@@ -283,7 +283,10 @@ table, th, td {
     .title h1{
         font-size: 30px;
     }
-   .title a {
-        padding-left: 100px;
+   
+        .title a{
+        padding: 7px 8px;
+    }
+       
     }
 }
