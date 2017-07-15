@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+/* The ode above would import the font into the css */
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +10,7 @@ footer,header,nav,main,body
 {
     display:block;
 }
+
 
 body{
     margin:0;
@@ -21,7 +24,6 @@ body{
     font-family:Helvetica;
     font-size: 18px;
     background-image: url(/final-project//pictures/making-step2color.gif);
-   
 }
 
 header{
@@ -58,6 +60,7 @@ header ul{
         display: flex;
 }
 
+/*This would help the nav bar to be centered*/
 .topnav li a {
         display: block;
         color: white;
@@ -74,7 +77,7 @@ li{
     list-style-type: none;    
 }
 
-/************* link ************************/
+/************* style for the links ************************/
 li a:link{
     text-decoration: none;
     color: #47556F;
@@ -87,7 +90,7 @@ li a:visited {
 li a:hover{
     color:black;
 }
-/*************************************/
+/**********************************************************/
 
 h1{
     font-family: Sansita, "second choice", generic-family;
@@ -105,16 +108,11 @@ h1{
     color:darkslategrey;
 }
 
-    
-
-
 .img{
 padding-right: 10px;
     display: flex;
     align-items: center;
 }
-
-
 
 .googleMap {
     width:50%;
@@ -144,6 +142,7 @@ padding-right: 10px;
     padding-bottom: 10px;
 }
 
+/********************* box section **********************/
 .box{
     display: flex;
     padding-top: 30px;
@@ -163,7 +162,7 @@ padding-right: 10px;
 }
 
 .box3 h3{
-        color:darkblue;
+    color:darkblue;
 }
 
 .box4 table{
@@ -172,12 +171,13 @@ padding-right: 10px;
 
 
 .box5{
-margin-top:30px;    
+    margin-top:30px;    
 }
 
 .box5 table{
     width:100%;
 }
+/********************* box section **********************/
 
 main{
     width:100%;
@@ -193,6 +193,8 @@ main{
     display: none;
 }
 
+/*Here we make the footer position to be fixed, so it would always stay 
+at the bottom of the page.*/
 footer{
     width: 100%;
     display: flex;
@@ -201,6 +203,7 @@ footer{
     position:fixed;
     bottom:0;
 }
+
 .copyright{
     
     width:100%;
@@ -209,7 +212,10 @@ footer{
     padding-left: 10px;
 }
 
-.home a:hover:not(.active) {color: darkorchid;}
+/*The hover property would make changes when our mouse hover on a link.*/
+.home a:hover:not(.active) {
+    color: darkorchid;
+}
 
 
 
@@ -225,6 +231,7 @@ the li a: can change the style when we interact with the links.
     #welcome{
     text-align: inherit;
     }
+    
     .title{
         text-align: left
     }
@@ -233,6 +240,7 @@ the li a: can change the style when we interact with the links.
         position: static;
         justify-content: space-around;
     }
+    
     body {
         width: 80%;
         margin: auto;
@@ -273,10 +281,13 @@ table, th, td {
         width:70%;
     }
 }
+
+/*This part of media query is to make changes when the screen is smaller than 600px.*/
 @media (max-width:600px){
     .box{
         padding-top: 0px;
     }
+    
     .box3{
         padding-top: 0px;
     }
@@ -304,11 +315,12 @@ table, th, td {
     
     .box5 img {
         width:85px;
-            height:100px;
+        height:100px;
     }
        
 }
 
+/*This is to make the top nav having a  bigger padding when the sreen is bigger than 600px*/
 @media (min-width:600px){
 .title a{
         padding: 14px 16px;
