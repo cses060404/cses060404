@@ -1,22 +1,3 @@
-/*
-
-    // Get the data from the wunderground API
-    function getData() {
-    
-        getJSON("/final-project/schedule.json").then(function (data) {
-            //add the code necessary here to update the page with all of the correct data points.
-            var data = data;
-            console.log(data);
-            var game1 = data[game1];
-            document.getElementById("date").innerHTML = game1.time;
-        })}
-}());
-//still dont know why
-
-/*
-
-*/
-
  function getJSON(url) {
         return fetch(url)
             .then(function (response) {
@@ -28,15 +9,17 @@
     }
 
 
-function ajaxFromLocalJson(){
+function ajaxFromLocalJson(x){
 	getJSON("../final-project/schedule.json").then(function (data){
 		console.log(data);
         
         
 		
-		document.getElementById("location").innerHTML = data["game1"].time;
-            document.getElementById("date").innerHTML = data[0].time;
-		
+		document.getElementById("round").innerHTML = data["game" + x].round;
+		document.getElementById("date").innerHTML = data["game" + x].date;
+        document.getElementById("location").innerHTML = data["game" + x].location;
+        document.getElementById("time").innerHTML = data["game" + x].time;
+        document.getElementById("description").innerHTML = data["game" + x].description;
         
         
         
@@ -81,4 +64,4 @@ function ajaxFromLocalJson(){
 */
 });
 }
-ajaxFromLocalJson();
+ajaxFromLocalJson(1);
