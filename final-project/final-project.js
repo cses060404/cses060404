@@ -36,7 +36,7 @@ function ajaxFromLocalJson(){
 		
 		document.getElementById("location").innerHTML = data["game1"].time;
             document.getElementById("date").innerHTML = data[0].time;
-		document.getElementById("description").innerHTML = data.["game1"].time;
+		
         
         
         
