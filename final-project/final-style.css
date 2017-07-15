@@ -62,7 +62,7 @@ header ul{
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        
 }
 
 
@@ -220,6 +220,9 @@ the li a: can change the style when we interact with the links.
         width: 80%;
         margin: auto;
     }
+    .title a{
+        padding: 14px 16px;
+    }
    
 }
 
@@ -230,12 +233,15 @@ the li a: can change the style when we interact with the links.
     align-items: center;
     }
 }
-.schedule{
-    display: flex;
-    flex-direction: column; 
-}
+
 table, th, td {
     border: 1px solid black;
+}
+
+.box4{
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
 }
 
 @media (max-width:1000px){
@@ -276,5 +282,8 @@ table, th, td {
     
     .title h1{
         font-size: 30px;
+    }
+   .title a {
+        padding-left: 100px;
     }
 }
